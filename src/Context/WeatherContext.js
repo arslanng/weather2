@@ -11,7 +11,7 @@ export const WeatherProvider = ({children}) => {
 
     useEffect(()=>{
         const key = "f07e374fa1929d25b9fc23b2669509e6"
-        axios(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=tr&units=metric`)
+        axios(`${process.env.REACT_APP_API_ENDPOINT}/data/2.5/weather?q=${city}&appid=${key}&lang=tr&units=metric`)
         .then((res)=> {
             setWeather(res.data)
             const date = new Date().getMinutes()
