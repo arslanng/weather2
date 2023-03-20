@@ -14,7 +14,6 @@ function Header() {
             <option value="Nevşehir">Nevşehir</option>
             <option value="Samsun">Samsun</option>
             <option value="Trabzon">Trabzon</option>
-            <option value="Adana">Adana</option>
             <option value="İzmir">İzmir</option>
         </select>
     </div>
